@@ -17,19 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fcTable"
-        android:name="com.example.lab6_1.MultiplicationTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.412" />
-
     <Button
         android:id="@+id/btnFirst"
         android:layout_width="60dp"
@@ -130,4 +117,15 @@
         android:text="7"
         app:layout_constraintStart_toEndOf="@+id/btnSixth"
         app:layout_constraintTop_toTopOf="@+id/btnSixth" />
+
+    <FrameLayout
+        android:id="@+id/flCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
